@@ -1,0 +1,184 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "type": "red",
+      "question": "Quelle est ta plus grande fantaisie sexuelle que tu n'as jamais réalisée?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 2,
+      "type": "red",
+      "question": "Où est l'endroit le plus fou où tu aimerais faire l'amour?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 3,
+      "type": "red",
+      "question": "Quelle est ta position préférée et pourquoi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 4,
+      "type": "red",
+      "question": "As-tu déjà pensé à quelqu'un d'autre pendant l'amour? Qui?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 5,
+      "type": "red",
+      "question": "Quel est ton plus grand turn-on au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 6,
+      "type": "red",
+      "question": "Si tu pouvais choisir, combien de fois par semaine voudrais-tu faire l'amour?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 7,
+      "type": "red",
+      "question": "Quelle partie de mon corps te rend le plus fou/folle?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 8,
+      "type": "red",
+      "question": "As-tu déjà fait un rêve érotique me concernant? Raconte-moi.",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 9,
+      "type": "red",
+      "question": "Quelle est la chose la plus osée que tu aimerais essayer ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 10,
+      "type": "red",
+      "question": "Note notre vie sexuelle sur 10 et explique ton score.",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 11,
+      "type": "blue",
+      "question": "Quelle est la chose que j'ai faite qui t'a fait tomber amoureux/amoureuse?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 12,
+      "type": "blue",
+      "question": "Quel est ton souvenir préféré de nous deux?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 13,
+      "type": "blue",
+      "question": "Si tu pouvais changer une chose dans notre relation, quelle serait-elle?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 14,
+      "type": "blue",
+      "question": "Comment imagines-tu notre avenir ensemble dans 10 ans?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 15,
+      "type": "blue",
+      "question": "Quelle est la qualité que tu admires le plus chez moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 16,
+      "type": "blue",
+      "question": "Qu'est-ce qui te manque le plus quand nous sommes séparés?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 17,
+      "type": "blue",
+      "question": "Quel est le plus beau cadeau que je t'ai fait (pas forcément matériel)?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 18,
+      "type": "blue",
+      "question": "Si tu pouvais me dire quelque chose sans avoir peur de ma réaction, qu'est-ce que ce serait?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 19,
+      "type": "blue",
+      "question": "Quelle est ta définition d'une relation parfaite?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 20,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait te sentir le plus aimé(e) dans notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 21,
+      "type": "black",
+      "question": "As-tu déjà été tenté(e) de tromper ton partenaire? Dans quelle situation?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 22,
+      "type": "black",
+      "question": "Pardonnerais-tu une infidélité? À quelles conditions?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 23,
+      "type": "black",
+      "question": "As-tu déjà flirté avec quelqu'un d'autre pendant notre relation?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 24,
+      "type": "black",
+      "question": "Qu'est-ce qui te pousserait à être infidèle?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 25,
+      "type": "black",
+      "question": "As-tu déjà menti sur où tu étais ou avec qui tu étais?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 26,
+      "type": "black",
+      "question": "Y a-t-il quelqu'un en ce moment qui te fait te sentir attiré(e)?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 27,
+      "type": "black",
+      "question": "As-tu déjà caché des messages ou conversations à ton partenaire?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 28,
+      "type": "black",
+      "question": "Considères-tu l'infidélité émotionnelle aussi grave que l'infidélité physique?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 29,
+      "type": "black",
+      "question": "As-tu déjà eu des doutes sur ma fidélité? Pourquoi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 30,
+      "type": "black",
+      "question": "Quelle est ta plus grande peur concernant notre relation?",
+      "image": "assets/images/card_black.png"
+    }
+  ]
+}
