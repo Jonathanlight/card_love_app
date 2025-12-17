@@ -42,6 +42,9 @@ dependencies:
   # Swipe animation
   flutter_card_swiper: ^7.0.1
 
+  # Share functionality
+  share_plus: ^10.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

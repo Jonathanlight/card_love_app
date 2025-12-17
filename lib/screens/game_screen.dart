@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
+import 'package:share_plus/share_plus.dart';
 import '../bloc/game_cubit.dart';
 import '../bloc/game_state.dart';
 import '../models/card_model.dart';
@@ -35,6 +36,22 @@ class _GameScreenState extends State<GameScreen> {
       }
     });
     return true;
+  }
+
+  void _shareCard(GameCard card) {
+    final String shareText = '''
+${card.getCardTypeLabel().toUpperCase()}
+
+${card.question}
+
+---
+Partagé depuis Card Love 💕
+''';
+
+    Share.share(
+      shareText,
+      subject: 'Question Card Love',
+    );
   }
 
   @override
@@ -97,6 +114,11 @@ class _GameScreenState extends State<GameScreen> {
                             numberOfCardsDisplayed: 1,
                             backCardOffset: const Offset(0, 0),
                             padding: const EdgeInsets.all(24.0),
+                            duration: const Duration(milliseconds: 400),
+                            maxAngle: 50,
+                            threshold: 35,
+                            scale: 0.85,
+                            isLoop: false,
                             cardBuilder: (
                               context,
                               index,
@@ -107,6 +129,7 @@ class _GameScreenState extends State<GameScreen> {
                                 card: _displayCards[index],
                                 width: MediaQuery.of(context).size.width * 0.85,
                                 height: MediaQuery.of(context).size.height * 0.6,
+                                onShare: () => _shareCard(_displayCards[index]),
                               );
                             },
                           ),
