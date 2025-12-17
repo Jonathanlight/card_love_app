@@ -108,6 +108,7 @@ Partagé depuis Card Love 💕
                         child: SizedBox(
                           height: MediaQuery.of(context).size.height * 0.65,
                           child: CardSwiper(
+                            key: ValueKey(state.currentCard!.id),
                             controller: _swiperController,
                             cardsCount: _displayCards.length,
                             onSwipe: _onSwipe,

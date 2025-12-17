@@ -179,6 +179,1026 @@
       "type": "black",
       "question": "Quelle est ta plus grande peur concernant notre relation?",
       "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 31,
+      "type": "red",
+      "question": "Quelle est la lingerie qui te fait le plus d'effet sur moi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 32,
+      "type": "red",
+      "question": "Aimerais-tu qu'on utilise des accessoires coquins? Lesquels?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 33,
+      "type": "red",
+      "question": "Quelle est ton expérience sexuelle la plus mémorable?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 34,
+      "type": "red",
+      "question": "Es-tu satisfait(e) de la fréquence de nos rapports?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 35,
+      "type": "red",
+      "question": "Y a-t-il quelque chose que tu aimerais que je fasse plus souvent au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 36,
+      "type": "blue",
+      "question": "Quel petit geste quotidien de ma part te rend heureux/heureuse?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 37,
+      "type": "blue",
+      "question": "Quelle est ta plus grande peur pour notre futur?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 38,
+      "type": "blue",
+      "question": "Comment préfères-tu que je te montre mon amour?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 39,
+      "type": "blue",
+      "question": "Quel sacrifice serais-tu prêt(e) à faire pour notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 40,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait rire le plus chez moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 41,
+      "type": "red",
+      "question": "Quelle musique aimes-tu écouter pendant nos moments intimes?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 42,
+      "type": "red",
+      "question": "As-tu déjà regardé du contenu érotique en pensant à moi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 43,
+      "type": "red",
+      "question": "Quelle est la zone érogène que tu aimerais que j'explore davantage?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 44,
+      "type": "red",
+      "question": "Préfères-tu qu'on fasse l'amour le matin, le soir ou l'après-midi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 45,
+      "type": "red",
+      "question": "Aimerais-tu qu'on essaye de nouveaux jeux de rôle? Lesquels?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 46,
+      "type": "black",
+      "question": "As-tu déjà supprimé des messages compromettants?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 47,
+      "type": "black",
+      "question": "Serais-tu capable de tromper si tu étais sûr(e) que je ne le saurais jamais?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 48,
+      "type": "black",
+      "question": "As-tu déjà ressenti de la jalousie envers quelqu'un de proche de moi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 49,
+      "type": "black",
+      "question": "Y a-t-il des ex avec qui tu es encore en contact?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 50,
+      "type": "black",
+      "question": "As-tu déjà comparé notre relation à celle de tes ex?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 51,
+      "type": "blue",
+      "question": "Quelle est la première chose que tu as remarquée chez moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 52,
+      "type": "blue",
+      "question": "Si tu devais me décrire en trois mots, quels seraient-ils?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 53,
+      "type": "blue",
+      "question": "Quel est notre plus beau moment de complicité?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 54,
+      "type": "blue",
+      "question": "Quelle chanson te fait penser à nous?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 55,
+      "type": "blue",
+      "question": "Si on devait partir vivre ailleurs, où aimerais-tu aller?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 56,
+      "type": "red",
+      "question": "Quelle est ta plus grosse frustration sexuelle?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 57,
+      "type": "red",
+      "question": "Aimerais-tu qu'on regarde du contenu érotique ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 58,
+      "type": "red",
+      "question": "Quelle est ta définition d'une soirée parfaite qui se termine au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 59,
+      "type": "red",
+      "question": "Es-tu plutôt spontané(e) ou planifié(e) pour l'amour?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 60,
+      "type": "red",
+      "question": "Quelle est la chose que je fais qui t'excite le plus?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 61,
+      "type": "blue",
+      "question": "Comment puis-je mieux te soutenir dans tes projets?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 62,
+      "type": "blue",
+      "question": "Quelle tradition aimerais-tu qu'on crée ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 63,
+      "type": "blue",
+      "question": "Quel est ton plus grand rêve pour notre couple?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 64,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait sentir le plus en sécurité avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 65,
+      "type": "blue",
+      "question": "Comment préfères-tu qu'on règle nos disputes?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 66,
+      "type": "black",
+      "question": "As-tu déjà menti sur tes sentiments pour moi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 67,
+      "type": "black",
+      "question": "Y a-t-il quelque chose que tu me caches actuellement?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 68,
+      "type": "black",
+      "question": "As-tu déjà douté de vouloir rester avec moi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 69,
+      "type": "black",
+      "question": "Quel est le mensonge le plus grave que tu m'as dit?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 70,
+      "type": "black",
+      "question": "As-tu déjà été attiré(e) par un(e) de mes ami(e)s?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 71,
+      "type": "red",
+      "question": "Aimerais-tu qu'on prenne une douche ou un bain ensemble plus souvent?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 72,
+      "type": "red",
+      "question": "Quelle sensation physique te procure le plus de plaisir?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 73,
+      "type": "red",
+      "question": "As-tu une fantaisie qui implique un lieu public?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 74,
+      "type": "red",
+      "question": "Quelle est ta plus grande insécurité au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 75,
+      "type": "red",
+      "question": "Aimerais-tu qu'on essaie de nouvelles techniques de massage?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 76,
+      "type": "blue",
+      "question": "Qu'est-ce que l'amour signifie pour toi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 77,
+      "type": "blue",
+      "question": "Quel est le plus grand défi que nous avons surmonté ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 78,
+      "type": "blue",
+      "question": "Comment vois-tu notre vie de famille dans le futur?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 79,
+      "type": "blue",
+      "question": "Quel est ton langage d'amour principal?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 80,
+      "type": "blue",
+      "question": "Quelle qualité de notre couple te rend le plus fier(e)?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 81,
+      "type": "red",
+      "question": "Quelle tenue te donne envie de me sauter dessus?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 82,
+      "type": "red",
+      "question": "Aimerais-tu qu'on fasse des photos coquines ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 83,
+      "type": "red",
+      "question": "Quelle est la durée idéale de nos ébats selon toi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 84,
+      "type": "red",
+      "question": "As-tu déjà fantasmé sur moi dans un contexte inhabituel?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 85,
+      "type": "red",
+      "question": "Quelle est la partie de ton corps dont tu es le/la plus fier(e)?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 86,
+      "type": "black",
+      "question": "As-tu déjà consulté mes messages sans me le dire?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 87,
+      "type": "black",
+      "question": "Qu'est-ce qui pourrait te faire quitter cette relation?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 88,
+      "type": "black",
+      "question": "As-tu déjà gardé contact avec un ex dans mon dos?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 89,
+      "type": "black",
+      "question": "Y a-t-il quelqu'un que tu vois régulièrement qui t'attire?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 90,
+      "type": "black",
+      "question": "As-tu déjà pensé à quelqu'un d'autre en m'embrassant?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 91,
+      "type": "blue",
+      "question": "Quelle est la chose la plus romantique que tu aies jamais faite?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 92,
+      "type": "blue",
+      "question": "Quel voyage aimerais-tu faire avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 93,
+      "type": "blue",
+      "question": "Quelle est ta plus grande fierté concernant notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 94,
+      "type": "blue",
+      "question": "Comment aimerais-tu qu'on célèbre nos anniversaires?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 95,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait te sentir le plus connecté(e) à moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 96,
+      "type": "red",
+      "question": "Quelle phrase murmurée à l'oreille te fait craquer?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 97,
+      "type": "red",
+      "question": "Aimerais-tu surprendre ou être surpris(e) au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 98,
+      "type": "red",
+      "question": "Quelle est ton odeur préférée sur moi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 99,
+      "type": "red",
+      "question": "As-tu un scénario précis en tête pour notre prochaine fois?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 100,
+      "type": "red",
+      "question": "Quelle est la chose la plus sexy que j'aie jamais faite selon toi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 101,
+      "type": "blue",
+      "question": "Quelle habitude de moi te fait sourire à chaque fois?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 102,
+      "type": "blue",
+      "question": "Si tu pouvais revivre un moment de notre relation, lequel serait-ce?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 103,
+      "type": "blue",
+      "question": "Qu'est-ce qui te donne envie de vieillir avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 104,
+      "type": "blue",
+      "question": "Quelle est la chose la plus importante que tu as apprise grâce à notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 105,
+      "type": "blue",
+      "question": "Comment aimerais-tu qu'on passe nos dimanches ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 106,
+      "type": "black",
+      "question": "As-tu déjà échangé des messages flirteurs avec quelqu'un d'autre?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 107,
+      "type": "black",
+      "question": "Penses-tu que je pourrais être infidèle un jour?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 108,
+      "type": "black",
+      "question": "As-tu déjà ressenti un regret par rapport à notre relation?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 109,
+      "type": "black",
+      "question": "Y a-t-il un secret que tu ne me diras jamais?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 110,
+      "type": "black",
+      "question": "As-tu déjà imaginé ta vie avec quelqu'un d'autre?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 111,
+      "type": "red",
+      "question": "Quelle partie de mon corps aimerais-tu que j'expose plus souvent?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 112,
+      "type": "red",
+      "question": "Préfères-tu les lumières allumées ou éteintes pendant l'amour?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 113,
+      "type": "red",
+      "question": "Aimerais-tu qu'on essaie quelque chose de nouveau ce weekend?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 114,
+      "type": "red",
+      "question": "Quelle est ta zone érogène secrète que personne ne connaît?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 115,
+      "type": "red",
+      "question": "Comment puis-je rendre nos moments intimes encore meilleurs?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 116,
+      "type": "blue",
+      "question": "Quel couple de film ou de série te fait penser à nous?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 117,
+      "type": "blue",
+      "question": "Quelle est la plus belle chose que tu trouves dans notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 118,
+      "type": "blue",
+      "question": "Comment imagines-tu notre maison idéale?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 119,
+      "type": "blue",
+      "question": "Quelle activité aimerais-tu qu'on fasse plus souvent ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 120,
+      "type": "blue",
+      "question": "Quel est ton moment préféré de la journée avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 121,
+      "type": "red",
+      "question": "Quelle est la chose la plus coquine que tu aimerais me voir porter?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 122,
+      "type": "red",
+      "question": "As-tu déjà eu envie de moi dans un moment inapproprié?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 123,
+      "type": "red",
+      "question": "Quelle est ta température idéale pour nos moments intimes?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 124,
+      "type": "red",
+      "question": "Aimerais-tu qu'on essaie de nouvelles positions?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 125,
+      "type": "red",
+      "question": "Quelle caresse te fait le plus d'effet?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 126,
+      "type": "black",
+      "question": "As-tu déjà eu une attirance pour un collègue de travail?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 127,
+      "type": "black",
+      "question": "M'as-tu déjà menti pour éviter une dispute?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 128,
+      "type": "black",
+      "question": "As-tu déjà pensé que notre relation ne tiendrait pas?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 129,
+      "type": "black",
+      "question": "Y a-t-il quelque chose dans mon passé qui te dérange?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 130,
+      "type": "black",
+      "question": "As-tu déjà regretté d'être avec moi, même brièvement?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 131,
+      "type": "blue",
+      "question": "Quelle est la chose qui te rend le plus heureux(se) dans notre quotidien?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 132,
+      "type": "blue",
+      "question": "Si tu pouvais me faire un cadeau sans limite de budget, ce serait quoi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 133,
+      "type": "blue",
+      "question": "Quelle est ta plus grande source de réconfort dans notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 134,
+      "type": "blue",
+      "question": "Comment vois-tu l'équilibre parfait entre nos moments à deux et nos vies sociales?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 135,
+      "type": "blue",
+      "question": "Quelle est la chose la plus importante que je t'ai apprise?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 136,
+      "type": "red",
+      "question": "Quel type de préliminaires préfères-tu?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 137,
+      "type": "red",
+      "question": "Y a-t-il un endroit dans notre maison où tu aimerais faire l'amour?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 138,
+      "type": "red",
+      "question": "Quelle est ta plus grande fierté concernant notre intimité?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 139,
+      "type": "red",
+      "question": "Aimerais-tu qu'on fixe une soirée spéciale chaque semaine?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 140,
+      "type": "red",
+      "question": "Quelle est la chose la plus importante pour toi dans notre vie sexuelle?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 141,
+      "type": "blue",
+      "question": "Quel est le plus beau compliment que tu pourrais me faire?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 142,
+      "type": "blue",
+      "question": "Comment puis-je mieux prendre soin de toi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 143,
+      "type": "blue",
+      "question": "Quelle est ta vision du bonheur avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 144,
+      "type": "blue",
+      "question": "Si on devait déménager ensemble, quel style de décoration préférerais-tu?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 145,
+      "type": "blue",
+      "question": "Quelle est la chose la plus courageuse que tu as faite pour notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 146,
+      "type": "black",
+      "question": "As-tu déjà été jaloux(se) au point de faire quelque chose que tu regrettes?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 147,
+      "type": "black",
+      "question": "Y a-t-il quelqu'un de mon entourage que tu n'aimes pas mais que tu tolères?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 148,
+      "type": "black",
+      "question": "As-tu déjà douté de mes sentiments pour toi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 149,
+      "type": "black",
+      "question": "M'as-tu déjà comparé(e) à tes ex de manière négative?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 150,
+      "type": "black",
+      "question": "As-tu déjà pensé à rompre sans me le dire?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 151,
+      "type": "red",
+      "question": "Quelle est ta fantaisie la plus secrète que tu n'as jamais osé me dire?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 152,
+      "type": "red",
+      "question": "Aimerais-tu qu'on essaie quelque chose de complètement nouveau ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 153,
+      "type": "red",
+      "question": "Quelle partie de nos ébats voudrais-tu prolonger?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 154,
+      "type": "red",
+      "question": "Es-tu plutôt dominateur/dominatrice ou soumis(e)?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 155,
+      "type": "red",
+      "question": "Quelle est la chose qui te rend instantanément d'humeur coquine?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 156,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait sentir vraiment compris(e) par moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 157,
+      "type": "blue",
+      "question": "Quelle surprise aimerais-tu que je te fasse?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 158,
+      "type": "blue",
+      "question": "Comment vois-tu notre vie sociale en couple?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 159,
+      "type": "blue",
+      "question": "Quelle est la plus belle preuve d'amour que je t'ai donnée?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 160,
+      "type": "blue",
+      "question": "Si on était bloqués sur une île déserte ensemble, quelle serait ta plus grande préoccupation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 161,
+      "type": "red",
+      "question": "Quel mot coquin murmure à ton oreille te fait craquer?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 162,
+      "type": "red",
+      "question": "Aimerais-tu explorer de nouvelles sensations ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 163,
+      "type": "red",
+      "question": "Quelle est ton ambiance parfaite pour un moment intime?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 164,
+      "type": "red",
+      "question": "Y a-t-il quelque chose que tu voudrais qu'on arrête de faire au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 165,
+      "type": "red",
+      "question": "Quelle est la chose la plus excitante que nous ayons faite ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 166,
+      "type": "black",
+      "question": "As-tu déjà fait semblant d'aller quelque part alors que tu allais ailleurs?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 167,
+      "type": "black",
+      "question": "Y a-t-il une partie de ta vie que tu me caches volontairement?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 168,
+      "type": "black",
+      "question": "As-tu déjà eu une conversation inappropriée sur les réseaux sociaux?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 169,
+      "type": "black",
+      "question": "Penses-tu que je pourrais te pardonner si tu me trompais?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 170,
+      "type": "black",
+      "question": "As-tu déjà caché une amitié ou relation pour éviter ma jalousie?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 171,
+      "type": "blue",
+      "question": "Quelle est la valeur la plus importante pour toi dans notre couple?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 172,
+      "type": "blue",
+      "question": "Comment aimerais-tu qu'on célèbre nos réussites ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 173,
+      "type": "blue",
+      "question": "Quelle est la chose la plus mignonne que je fais sans m'en rendre compte?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 174,
+      "type": "blue",
+      "question": "Si tu pouvais me décrire notre amour en une phrase, ce serait quoi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 175,
+      "type": "blue",
+      "question": "Quelle est ta plus grande gratitude envers notre relation?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 176,
+      "type": "red",
+      "question": "Quelle est ton fantasme numéro un avec moi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 177,
+      "type": "red",
+      "question": "Préfères-tu la tendresse ou la passion au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 178,
+      "type": "red",
+      "question": "Y a-t-il un type de baiser qui te fait particulièrement craquer?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 179,
+      "type": "red",
+      "question": "Aimerais-tu qu'on crée notre propre code secret coquin?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 180,
+      "type": "red",
+      "question": "Quelle est la chose la plus sensuelle que je pourrais te faire maintenant?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 181,
+      "type": "blue",
+      "question": "Quel est le plus beau moment de tendresse qu'on a partagé?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 182,
+      "type": "blue",
+      "question": "Comment aimerais-tu qu'on gère nos finances ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 183,
+      "type": "blue",
+      "question": "Quelle est ta plus grande attente pour notre futur proche?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 184,
+      "type": "blue",
+      "question": "Qu'est-ce qui te fait te sentir le plus chanceux(se) de m'avoir?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 185,
+      "type": "blue",
+      "question": "Quelle est la chose la plus importante que tu veux accomplir avec moi?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 186,
+      "type": "black",
+      "question": "As-tu déjà pensé que quelqu'un d'autre pourrait mieux me convenir?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 187,
+      "type": "black",
+      "question": "Y a-t-il un secret de ton passé qui pourrait changer notre relation?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 188,
+      "type": "black",
+      "question": "As-tu déjà menti sur quelque chose d'important?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 189,
+      "type": "black",
+      "question": "Penses-tu que l'un de nous deux pourrait tromper l'autre un jour?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 190,
+      "type": "black",
+      "question": "As-tu déjà ressenti une connexion spéciale avec quelqu'un d'autre récemment?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 191,
+      "type": "red",
+      "question": "Quelle est la chose la plus audacieuse que tu voudrais essayer avec moi?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 192,
+      "type": "red",
+      "question": "Comment puis-je améliorer ton plaisir au lit?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 193,
+      "type": "blue",
+      "question": "Quelle est la plus belle leçon que notre amour t'a apprise?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 194,
+      "type": "blue",
+      "question": "Si tu devais écrire un livre sur notre histoire, quel serait le titre?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 195,
+      "type": "blue",
+      "question": "Quelle est la chose que tu aimerais faire ensemble avant la fin de l'année?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 196,
+      "type": "red",
+      "question": "Aimerais-tu qu'on planifie un weekend coquin ensemble?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 197,
+      "type": "black",
+      "question": "As-tu déjà eu peur que je découvre quelque chose sur toi?",
+      "image": "assets/images/card_black.png"
+    },
+    {
+      "id": 198,
+      "type": "blue",
+      "question": "Quelle est la chose la plus romantique qu'on pourrait faire ensemble?",
+      "image": "assets/images/card_blue.png"
+    },
+    {
+      "id": 199,
+      "type": "red",
+      "question": "Quel est ton rêve secret concernant notre intimité?",
+      "image": "assets/images/card_red.png"
+    },
+    {
+      "id": 200,
+      "type": "blue",
+      "question": "Comment vois-tu notre amour dans 20 ans?",
+      "image": "assets/images/card_blue.png"
     }
   ]
 }
