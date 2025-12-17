@@ -13,6 +13,7 @@ class GameState extends Equatable {
   final GameStatus status;
   final List<GameCard> availableCards;
   final List<GameCard> drawnCards;
+  final List<GameCard> favoriteCards;
   final GameCard? currentCard;
   final String? errorMessage;
 
@@ -20,6 +21,7 @@ class GameState extends Equatable {
     this.status = GameStatus.initial,
     this.availableCards = const [],
     this.drawnCards = const [],
+    this.favoriteCards = const [],
     this.currentCard,
     this.errorMessage,
   });
@@ -28,6 +30,7 @@ class GameState extends Equatable {
     GameStatus? status,
     List<GameCard>? availableCards,
     List<GameCard>? drawnCards,
+    List<GameCard>? favoriteCards,
     GameCard? currentCard,
     String? errorMessage,
   }) {
@@ -35,6 +38,7 @@ class GameState extends Equatable {
       status: status ?? this.status,
       availableCards: availableCards ?? this.availableCards,
       drawnCards: drawnCards ?? this.drawnCards,
+      favoriteCards: favoriteCards ?? this.favoriteCards,
       currentCard: currentCard ?? this.currentCard,
       errorMessage: errorMessage ?? this.errorMessage,
     );
@@ -49,6 +53,7 @@ class GameState extends Equatable {
         status,
         availableCards,
         drawnCards,
+        favoriteCards,
         currentCard,
         errorMessage,
       ];

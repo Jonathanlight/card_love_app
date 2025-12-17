@@ -6,6 +6,8 @@ class GameCardWidget extends StatelessWidget {
   final double width;
   final double height;
   final VoidCallback? onShare;
+  final VoidCallback? onFavorite;
+  final bool isFavorite;
 
   const GameCardWidget({
     super.key,
@@ -13,6 +15,8 @@ class GameCardWidget extends StatelessWidget {
     this.width = 300,
     this.height = 450,
     this.onShare,
+    this.onFavorite,
+    this.isFavorite = false,
   });
 
   @override
@@ -158,11 +162,44 @@ class GameCardWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Heart icon at bottom
-                  const Icon(
-                    Icons.favorite,
-                    color: Colors.white70,
-                    size: 32,
+                  // Heart icon and favorite button at bottom
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Icon(
+                        Icons.favorite,
+                        color: Colors.white70,
+                        size: 32,
+                      ),
+                      if (onFavorite != null)
+                        Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: onFavorite,
+                            borderRadius: BorderRadius.circular(20),
+                            child: Container(
+                              padding: const EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                color: isFavorite
+                                    ? Colors.pinkAccent.withOpacity(0.3)
+                                    : Colors.white.withOpacity(0.2),
+                                borderRadius: BorderRadius.circular(20),
+                                border: Border.all(
+                                  color: isFavorite
+                                      ? Colors.pinkAccent
+                                      : Colors.white.withOpacity(0.3),
+                                  width: 1,
+                                ),
+                              ),
+                              child: Icon(
+                                isFavorite ? Icons.star : Icons.star_border,
+                                color: isFavorite ? Colors.pinkAccent : Colors.white,
+                                size: 24,
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
                 ],
               ),

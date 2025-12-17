@@ -6,6 +6,7 @@ import '../bloc/game_cubit.dart';
 import '../bloc/game_state.dart';
 import '../models/card_model.dart';
 import '../widgets/game_card_widget.dart';
+import 'favorites_screen.dart';
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -115,10 +116,10 @@ Partagé depuis Card Love 💕
                             numberOfCardsDisplayed: 1,
                             backCardOffset: const Offset(0, 0),
                             padding: const EdgeInsets.all(24.0),
-                            duration: const Duration(milliseconds: 400),
-                            maxAngle: 50,
-                            threshold: 35,
-                            scale: 0.85,
+                            duration: const Duration(milliseconds: 300),
+                            maxAngle: 25,
+                            threshold: 50,
+                            scale: 0.95,
                             isLoop: false,
                             cardBuilder: (
                               context,
@@ -126,11 +127,14 @@ Partagé depuis Card Love 💕
                               horizontalThresholdPercentage,
                               verticalThresholdPercentage,
                             ) {
+                              final card = _displayCards[index];
                               return GameCardWidget(
-                                card: _displayCards[index],
+                                card: card,
                                 width: MediaQuery.of(context).size.width * 0.85,
                                 height: MediaQuery.of(context).size.height * 0.6,
-                                onShare: () => _shareCard(_displayCards[index]),
+                                onShare: () => _shareCard(card),
+                                onFavorite: () => context.read<GameCubit>().toggleFavorite(card),
+                                isFavorite: context.read<GameCubit>().isFavorite(card),
                               );
                             },
                           ),
@@ -308,20 +312,57 @@ Partagé depuis Card Love 💕
               ),
             ],
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Text(
-              '${state.remainingCards}/${state.totalCards}',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+          Row(
+            children: [
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => BlocProvider.value(
+                        value: context.read<GameCubit>(),
+                        child: const FavoritesScreen(),
+                      ),
+                    ),
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.pinkAccent.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(
+                      color: Colors.pinkAccent.withOpacity(0.5),
+                      width: 1,
+                    ),
+                  ),
+                  child: Badge(
+                    isLabelVisible: state.favoriteCards.isNotEmpty,
+                    label: Text('${state.favoriteCards.length}'),
+                    child: const Icon(
+                      Icons.star,
+                      color: Colors.pinkAccent,
+                      size: 24,
+                    ),
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(width: 12),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Text(
+                  '${state.remainingCards}/${state.totalCards}',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
