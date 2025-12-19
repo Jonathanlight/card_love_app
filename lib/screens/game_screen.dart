@@ -46,12 +46,12 @@ ${card.getCardTypeLabel().toUpperCase()}
 ${card.question}
 
 ---
-Partagé depuis Card Love 💕
+Partagé depuis Love Quest 💕
 ''';
 
     Share.share(
       shareText,
-      subject: 'Question Card Love',
+      subject: 'Question Love Quest',
     );
   }
 
@@ -166,7 +166,7 @@ Partagé depuis Card Love 💕
           ),
           const SizedBox(height: 24),
           const Text(
-            'CARD LOVE',
+            'LOVE QUEST',
             style: TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
@@ -291,35 +291,38 @@ Partagé depuis Card Love 💕
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'CARD LOVE',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'LOVE QUEST',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                'Swipe pour la prochaine carte',
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.6),
-                  fontSize: 14,
+                const SizedBox(height: 4),
+                Text(
+                  'Swipe pour la prochaine carte',
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.6),
+                    fontSize: 14,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           Row(
             children: [
               GestureDetector(
                 onTap: () {
+                  final gameCubit = context.read<GameCubit>();
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => BlocProvider.value(
-                        value: context.read<GameCubit>(),
+                        value: gameCubit,
                         child: const FavoritesScreen(),
                       ),
                     ),

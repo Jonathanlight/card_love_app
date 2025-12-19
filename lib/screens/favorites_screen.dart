@@ -48,9 +48,15 @@ class FavoritesScreen extends StatelessWidget {
                           onTap: () {
                             _showCardDetail(context, card, state);
                           },
-                          child: GameCardWidget(
-                            card: card,
-                            isFavorite: true,
+                          child: LayoutBuilder(
+                            builder: (context, constraints) {
+                              return GameCardWidget(
+                                card: card,
+                                width: constraints.maxWidth,
+                                height: constraints.maxHeight,
+                                isFavorite: true,
+                              );
+                            },
                           ),
                         );
                       },
@@ -75,26 +81,28 @@ class FavoritesScreen extends StatelessWidget {
             onPressed: () => Navigator.of(context).pop(),
           ),
           const SizedBox(width: 8),
-          const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'MES FAVORIS',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
+          Flexible(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text(
+                  'MES FAVORIS',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              SizedBox(height: 4),
-              Text(
-                'Cartes sauvegardées',
-                style: TextStyle(
-                  color: Colors.white70,
-                  fontSize: 14,
+                SizedBox(height: 4),
+                Text(
+                  'Cartes sauvegardées',
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 14,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
@@ -135,6 +143,7 @@ class FavoritesScreen extends StatelessWidget {
   }
 
   void _showCardDetail(BuildContext context, card, GameState state) {
+    final gameCubit = context.read<GameCubit>();
     showDialog(
       context: context,
       builder: (dialogContext) => Dialog(
@@ -146,10 +155,10 @@ class FavoritesScreen extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.85,
             height: MediaQuery.of(context).size.height * 0.65,
             onFavorite: () {
-              context.read<GameCubit>().toggleFavorite(card);
+              gameCubit.toggleFavorite(card);
               Navigator.of(dialogContext).pop();
             },
-            isFavorite: context.read<GameCubit>().isFavorite(card),
+            isFavorite: gameCubit.isFavorite(card),
           ),
         ),
       ),

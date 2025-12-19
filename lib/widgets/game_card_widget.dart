@@ -82,7 +82,7 @@ class GameCardWidget extends StatelessWidget {
             ),
             // Content
             Padding(
-              padding: const EdgeInsets.all(24.0),
+              padding: EdgeInsets.all(width < 150 ? 12.0 : 24.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -91,29 +91,34 @@ class GameCardWidget extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 8,
-                        ),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(
-                            color: Colors.white.withOpacity(0.3),
-                            width: 1,
+                      Flexible(
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8,
+                            vertical: 6,
                           ),
-                        ),
-                        child: Text(
-                          card.getCardTypeLabel().toUpperCase(),
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 12,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(
+                              color: Colors.white.withOpacity(0.3),
+                              width: 1,
+                            ),
+                          ),
+                          child: Text(
+                            card.getCardTypeLabel().toUpperCase(),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1,
+                            ),
                           ),
                         ),
                       ),
+                      if (onShare != null) const SizedBox(width: 4),
                       if (onShare != null)
                         Material(
                           color: Colors.transparent,
@@ -121,7 +126,7 @@ class GameCardWidget extends StatelessWidget {
                             onTap: onShare,
                             borderRadius: BorderRadius.circular(20),
                             child: Container(
-                              padding: const EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(6),
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(0.2),
                                 borderRadius: BorderRadius.circular(20),
@@ -133,7 +138,7 @@ class GameCardWidget extends StatelessWidget {
                               child: const Icon(
                                 Icons.share,
                                 color: Colors.white,
-                                size: 20,
+                                size: 16,
                               ),
                             ),
                           ),
@@ -146,12 +151,12 @@ class GameCardWidget extends StatelessWidget {
                       child: Text(
                         card.question,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: width < 150 ? 12 : 22,
                           fontWeight: FontWeight.w600,
                           height: 1.4,
-                          shadows: [
+                          shadows: const [
                             Shadow(
                               color: Colors.black26,
                               offset: Offset(0, 2),
@@ -166,10 +171,10 @@ class GameCardWidget extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.favorite,
                         color: Colors.white70,
-                        size: 32,
+                        size: width < 150 ? 20 : 32,
                       ),
                       if (onFavorite != null)
                         Material(
@@ -178,7 +183,7 @@ class GameCardWidget extends StatelessWidget {
                             onTap: onFavorite,
                             borderRadius: BorderRadius.circular(20),
                             child: Container(
-                              padding: const EdgeInsets.all(8),
+                              padding: EdgeInsets.all(width < 150 ? 6 : 8),
                               decoration: BoxDecoration(
                                 color: isFavorite
                                     ? Colors.pinkAccent.withOpacity(0.3)
@@ -194,7 +199,7 @@ class GameCardWidget extends StatelessWidget {
                               child: Icon(
                                 isFavorite ? Icons.star : Icons.star_border,
                                 color: isFavorite ? Colors.pinkAccent : Colors.white,
-                                size: 24,
+                                size: width < 150 ? 18 : 24,
                               ),
                             ),
                           ),
@@ -297,7 +302,7 @@ class CardBackWidget extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'CARD LOVE',
+                  'LOVE QUEST',
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.5),
                     fontSize: 24,
