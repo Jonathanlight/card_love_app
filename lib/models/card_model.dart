@@ -5,6 +5,7 @@ enum CardType {
   red,
   blue,
   black,
+  fun,
 }
 
 class GameCard extends Equatable {
@@ -12,12 +13,16 @@ class GameCard extends Equatable {
   final CardType type;
   final String question;
   final String? image;
+  final String? packId;
+  final bool isFree;
 
   const GameCard({
     required this.id,
     required this.type,
     required this.question,
     this.image,
+    this.packId,
+    this.isFree = false,
   });
 
   factory GameCard.fromJson(Map<String, dynamic> json) {
@@ -26,6 +31,8 @@ class GameCard extends Equatable {
       type: _cardTypeFromString(json['type'] as String),
       question: json['question'] as String,
       image: json['image'] as String?,
+      packId: json['packId'] as String?,
+      isFree: json['isFree'] as bool? ?? false,
     );
   }
 
@@ -37,6 +44,8 @@ class GameCard extends Equatable {
         return CardType.blue;
       case 'black':
         return CardType.black;
+      case 'fun':
+        return CardType.fun;
       default:
         return CardType.blue;
     }
@@ -48,6 +57,8 @@ class GameCard extends Equatable {
       'type': type.name,
       'question': question,
       'image': image,
+      'packId': packId,
+      'isFree': isFree,
     };
   }
 
@@ -59,6 +70,8 @@ class GameCard extends Equatable {
         return const Color(0xFF1E88E5);
       case CardType.black:
         return const Color(0xFF212121);
+      case CardType.fun:
+        return const Color(0xFFFFB300);
     }
   }
 
@@ -94,6 +107,16 @@ class GameCard extends Equatable {
             Color(0xFF000000),
           ],
         );
+      case CardType.fun:
+        return const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFFFFD54F),
+            Color(0xFFFFB300),
+            Color(0xFFF57C00),
+          ],
+        );
     }
   }
 
@@ -105,9 +128,11 @@ class GameCard extends Equatable {
         return 'Vie de Couple';
       case CardType.black:
         return 'Infidélité';
+      case CardType.fun:
+        return 'Question Fun';
     }
   }
 
   @override
-  List<Object?> get props => [id, type, question, image];
+  List<Object?> get props => [id, type, question, image, packId, isFree];
 }

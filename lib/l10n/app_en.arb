@@ -1,0 +1,383 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Love Quest",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+
+  "welcomeTitle": "Love Quest",
+  "@welcomeTitle": {
+    "description": "Welcome screen title"
+  },
+
+  "welcomeSubtitle": "Intimate questions for couples",
+  "@welcomeSubtitle": {
+    "description": "Welcome screen subtitle"
+  },
+
+  "startGame": "Start",
+  "@startGame": {
+    "description": "Start game button"
+  },
+
+  "newGame": "New Game",
+  "@newGame": {
+    "description": "New game button"
+  },
+
+  "gameFinished": "Game Finished",
+  "@gameFinished": {
+    "description": "Game finished title"
+  },
+
+  "cardsDrawn": "Cards drawn",
+  "@cardsDrawn": {
+    "description": "Cards drawn label"
+  },
+
+  "favorites": "Favorites",
+  "@favorites": {
+    "description": "Favorites title"
+  },
+
+  "noFavorites": "No favorites",
+  "@noFavorites": {
+    "description": "No favorites message"
+  },
+
+  "noFavoritesDescription": "Tap the star to add a card to your favorites",
+  "@noFavoritesDescription": {
+    "description": "No favorites description"
+  },
+
+  "shop": "Shop",
+  "@shop": {
+    "description": "Shop title"
+  },
+
+  "unlockMoreQuestions": "Unlock more questions",
+  "@unlockMoreQuestions": {
+    "description": "Shop header"
+  },
+
+  "freeCardsAvailable": "{count} cards already available for free",
+  "@freeCardsAvailable": {
+    "description": "Free cards available message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "packHotName": "Hot Pack",
+  "@packHotName": {
+    "description": "Hot pack name"
+  },
+
+  "packHotDescription": "Ultra intimate and sensual questions",
+  "@packHotDescription": {
+    "description": "Hot pack description"
+  },
+
+  "packCoupleName": "Long-term Couple Pack",
+  "@packCoupleName": {
+    "description": "Couple pack name"
+  },
+
+  "packCoupleDescription": "Deepen your relationship",
+  "@packCoupleDescription": {
+    "description": "Couple pack description"
+  },
+
+  "packTabouName": "Taboo Pack",
+  "@packTabouName": {
+    "description": "Taboo pack name"
+  },
+
+  "packTabouDescription": "Questions about trust and infidelity",
+  "@packTabouDescription": {
+    "description": "Taboo pack description"
+  },
+
+  "packFunName": "Fun / Party Pack",
+  "@packFunName": {
+    "description": "Fun pack name"
+  },
+
+  "packFunDescription": "Light-hearted questions to have fun with friends",
+  "@packFunDescription": {
+    "description": "Fun pack description"
+  },
+
+  "cardsCount": "{count} cards",
+  "@cardsCount": {
+    "description": "Cards count",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "buy": "Buy",
+  "@buy": {
+    "description": "Buy button"
+  },
+
+  "owned": "Owned",
+  "@owned": {
+    "description": "Owned badge"
+  },
+
+  "restorePurchases": "Restore Purchases",
+  "@restorePurchases": {
+    "description": "Restore purchases button"
+  },
+
+  "purchaseSuccess": "{packName} unlocked!",
+  "@purchaseSuccess": {
+    "description": "Purchase success message",
+    "placeholders": {
+      "packName": {
+        "type": "String"
+      }
+    }
+  },
+
+  "purchaseError": "Purchase failed. Please try again.",
+  "@purchaseError": {
+    "description": "Purchase error message"
+  },
+
+  "storeNotAvailable": "Store not available",
+  "@storeNotAvailable": {
+    "description": "Store not available error"
+  },
+
+  "alreadyOwned": "You already own this pack",
+  "@alreadyOwned": {
+    "description": "Already owned message"
+  },
+
+  "networkError": "Network error. Check your connection.",
+  "@networkError": {
+    "description": "Network error message"
+  },
+
+  "restoreSuccess": "{count} packs restored",
+  "@restoreSuccess": {
+    "description": "Restore success message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "restoreNone": "No purchases to restore",
+  "@restoreNone": {
+    "description": "No purchases to restore message"
+  },
+
+  "restoreError": "Restore error",
+  "@restoreError": {
+    "description": "Restore error message"
+  },
+
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+
+  "errorLoadingCards": "Error loading cards: {error}",
+  "@errorLoadingCards": {
+    "description": "Error loading cards",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+
+  "noCardsAvailable": "No cards available",
+  "@noCardsAvailable": {
+    "description": "No cards available error"
+  },
+
+  "questionSexy": "Sexy Question",
+  "@questionSexy": {
+    "description": "Sexy question label"
+  },
+
+  "vieDeCouple": "Couple Life",
+  "@vieDeCouple": {
+    "description": "Couple life label"
+  },
+
+  "infidelite": "Infidelity",
+  "@infidelite": {
+    "description": "Infidelity label"
+  },
+
+  "questionFun": "Fun Question",
+  "@questionFun": {
+    "description": "Fun question label"
+  },
+
+  "swipeInstruction": "Swipe for next card",
+  "@swipeInstruction": {
+    "description": "Swipe instruction"
+  },
+
+  "youDrewCards": "You drew {count} cards",
+  "@youDrewCards": {
+    "description": "You drew cards message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "endGameTitle": "End game?",
+  "@endGameTitle": {
+    "description": "End game dialog title"
+  },
+
+  "endGameMessage": "Do you really want to end the game?",
+  "@endGameMessage": {
+    "description": "End game dialog message"
+  },
+
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+
+  "end": "End",
+  "@end": {
+    "description": "End button"
+  },
+
+  "errorOccurred": "An error occurred",
+  "@errorOccurred": {
+    "description": "Generic error message"
+  },
+
+  "about": "About",
+  "@about": {
+    "description": "About button"
+  },
+
+  "aboutTitle": "About Love Quest",
+  "@aboutTitle": {
+    "description": "About screen title"
+  },
+
+  "gameRules": "Game Rules",
+  "@gameRules": {
+    "description": "Game rules section title"
+  },
+
+  "rulesIntro": "Love Quest is an intimate card game for couples who want to deepen their relationship.",
+  "@rulesIntro": {
+    "description": "Rules introduction"
+  },
+
+  "rulesHowToPlay": "How to Play",
+  "@rulesHowToPlay": {
+    "description": "How to play section"
+  },
+
+  "rulesStep1": "1. Get comfortable with your partner in a quiet place",
+  "@rulesStep1": {
+    "description": "Rule step 1"
+  },
+
+  "rulesStep2": "2. Tap 'Start' to begin a game",
+  "@rulesStep2": {
+    "description": "Rule step 2"
+  },
+
+  "rulesStep3": "3. Swipe the card to reveal the next question",
+  "@rulesStep3": {
+    "description": "Rule step 3"
+  },
+
+  "rulesStep4": "4. Take turns answering questions with honesty and respect",
+  "@rulesStep4": {
+    "description": "Rule step 4"
+  },
+
+  "rulesStep5": "5. Use the star to save your favorite questions",
+  "@rulesStep5": {
+    "description": "Rule step 5"
+  },
+
+  "cardTypes": "Card Types",
+  "@cardTypes": {
+    "description": "Card types section"
+  },
+
+  "cardTypeHot": "🔥 Sexy Questions - Intimate and sensual questions to spice up your relationship",
+  "@cardTypeHot": {
+    "description": "Hot card type description"
+  },
+
+  "cardTypeCouple": "💙 Couple Life - Questions to deepen your emotional connection",
+  "@cardTypeCouple": {
+    "description": "Couple card type description"
+  },
+
+  "cardTypeTabou": "⚫ Infidelity - Questions about trust and boundaries in your relationship",
+  "@cardTypeTabou": {
+    "description": "Tabou card type description"
+  },
+
+  "cardTypeFun": "🎉 Fun Questions - Light and entertaining questions to lighten the mood",
+  "@cardTypeFun": {
+    "description": "Fun card type description"
+  },
+
+  "tips": "Tips",
+  "@tips": {
+    "description": "Tips section"
+  },
+
+  "tip1": "• Create a relaxed and judgment-free atmosphere",
+  "@tip1": {
+    "description": "Tip 1"
+  },
+
+  "tip2": "• Take your time to answer with sincerity",
+  "@tip2": {
+    "description": "Tip 2"
+  },
+
+  "tip3": "• Respect your partner's boundaries",
+  "@tip3": {
+    "description": "Tip 3"
+  },
+
+  "tip4": "• Use the game as an opportunity to get closer",
+  "@tip4": {
+    "description": "Tip 4"
+  },
+
+  "developer": "Developed by",
+  "@developer": {
+    "description": "Developer label"
+  },
+
+  "developerName": "Jonathan .K",
+  "@developerName": {
+    "description": "Developer name"
+  },
+
+  "developerTitle": "Symfony/Flutter Developer",
+  "@developerTitle": {
+    "description": "Developer title"
+  }
+}
