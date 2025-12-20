@@ -4,9 +4,14 @@ import 'package:flutter_card_swiper/flutter_card_swiper.dart';
 import 'package:share_plus/share_plus.dart';
 import '../bloc/game_cubit.dart';
 import '../bloc/game_state.dart';
+import '../bloc/purchase_cubit.dart';
+import '../bloc/locale_cubit.dart';
 import '../models/card_model.dart';
 import '../widgets/game_card_widget.dart';
 import 'favorites_screen.dart';
+import 'shop_screen.dart';
+import 'about_screen.dart';
+import 'package:card_love/l10n/generated/app_localizations.dart';
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -40,7 +45,8 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _shareCard(GameCard card) {
-    final String shareText = '''
+    final String shareText =
+        '''
 ${card.getCardTypeLabel().toUpperCase()}
 
 ${card.question}
@@ -49,10 +55,7 @@ ${card.question}
 Partagé depuis Love Quest 💕
 ''';
 
-    Share.share(
-      shareText,
-      subject: 'Question Love Quest',
-    );
+    Share.share(shareText, subject: 'Question Love Quest');
   }
 
   @override
@@ -63,11 +66,7 @@ Partagé depuis Love Quest 💕
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF1A1A2E),
-              Color(0xFF16213E),
-              Color(0xFF0F3460),
-            ],
+            colors: [Color(0xFF1A1A2E), Color(0xFF16213E), Color(0xFF0F3460)],
           ),
         ),
         child: SafeArea(
@@ -76,7 +75,10 @@ Partagé depuis Love Quest 💕
               if (state.status == GameStatus.error) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text(state.errorMessage ?? 'Une erreur est survenue'),
+                    content: Text(
+                      state.errorMessage ??
+                          AppLocalizations.of(context)!.errorOccurred,
+                    ),
                     backgroundColor: Colors.red,
                   ),
                 );
@@ -97,7 +99,8 @@ Partagé depuis Love Quest 💕
                 return _buildFinishedScreen(context, state);
               }
 
-              if (state.status == GameStatus.playing && state.currentCard != null) {
+              if (state.status == GameStatus.playing &&
+                  state.currentCard != null) {
                 // Create a list with current card for swiper
                 _displayCards = [state.currentCard!];
 
@@ -121,22 +124,31 @@ Partagé depuis Love Quest 💕
                             threshold: 50,
                             scale: 0.95,
                             isLoop: false,
-                            cardBuilder: (
-                              context,
-                              index,
-                              horizontalThresholdPercentage,
-                              verticalThresholdPercentage,
-                            ) {
-                              final card = _displayCards[index];
-                              return GameCardWidget(
-                                card: card,
-                                width: MediaQuery.of(context).size.width * 0.85,
-                                height: MediaQuery.of(context).size.height * 0.6,
-                                onShare: () => _shareCard(card),
-                                onFavorite: () => context.read<GameCubit>().toggleFavorite(card),
-                                isFavorite: context.read<GameCubit>().isFavorite(card),
-                              );
-                            },
+                            cardBuilder:
+                                (
+                                  context,
+                                  index,
+                                  horizontalThresholdPercentage,
+                                  verticalThresholdPercentage,
+                                ) {
+                                  final card = _displayCards[index];
+                                  return GameCardWidget(
+                                    card: card,
+                                    width:
+                                        MediaQuery.of(context).size.width *
+                                        0.85,
+                                    height:
+                                        MediaQuery.of(context).size.height *
+                                        0.6,
+                                    onShare: () => _shareCard(card),
+                                    onFavorite: () => context
+                                        .read<GameCubit>()
+                                        .toggleFavorite(card),
+                                    isFavorite: context
+                                        .read<GameCubit>()
+                                        .isFavorite(card),
+                                  );
+                                },
                           ),
                         ),
                       ),
@@ -159,15 +171,11 @@ Partagé depuis Love Quest 💕
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
-            Icons.favorite,
-            size: 100,
-            color: Colors.pinkAccent,
-          ),
+          const Icon(Icons.favorite, size: 100, color: Colors.pinkAccent),
           const SizedBox(height: 24),
-          const Text(
-            'LOVE QUEST',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.welcomeTitle,
+            style: const TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -178,7 +186,7 @@ Partagé depuis Love Quest 💕
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Text(
-              'Découvrez-vous autrement avec des questions\nqui rapprochent les cœurs',
+              AppLocalizations.of(context)!.welcomeSubtitle,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16,
@@ -197,25 +205,78 @@ Partagé depuis Love Quest 💕
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.pinkAccent,
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(
-                horizontal: 48,
-                vertical: 16,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
               elevation: 8,
             ),
-            child: const Text(
-              'COMMENCER LE JEU',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.startGame.toUpperCase(),
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1,
               ),
             ),
           ),
+          const SizedBox(height: 32),
+          // Language selector
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              _buildLanguageButton(
+                context,
+                '🇫🇷 Français',
+                'fr',
+                Localizations.localeOf(context).languageCode == 'fr',
+              ),
+              const SizedBox(width: 16),
+              _buildLanguageButton(
+                context,
+                '🇬🇧 English',
+                'en',
+                Localizations.localeOf(context).languageCode == 'en',
+              ),
+            ],
+          ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildLanguageButton(
+    BuildContext context,
+    String label,
+    String languageCode,
+    bool isSelected,
+  ) {
+    return GestureDetector(
+      onTap: () {
+        context.read<LocaleCubit>().changeLocale(languageCode);
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+        decoration: BoxDecoration(
+          color: isSelected
+              ? Colors.pinkAccent.withOpacity(0.3)
+              : Colors.white.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: isSelected
+                ? Colors.pinkAccent
+                : Colors.white.withOpacity(0.3),
+            width: 2,
+          ),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+          ),
+        ),
       ),
     );
   }
@@ -227,28 +288,28 @@ Partagé depuis Love Quest 💕
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.1),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: Colors.white.withOpacity(0.2),
-          width: 1,
-        ),
+        border: Border.all(color: Colors.white.withOpacity(0.2), width: 1),
       ),
       child: Column(
         children: [
           _buildLegendItem(
+            context: context,
             color: const Color(0xFFE53935),
-            label: 'Questions Sexy',
+            label: AppLocalizations.of(context)!.questionSexy,
             icon: Icons.whatshot,
           ),
           const SizedBox(height: 12),
           _buildLegendItem(
+            context: context,
             color: const Color(0xFF1E88E5),
-            label: 'Vie de Couple',
+            label: AppLocalizations.of(context)!.vieDeCouple,
             icon: Icons.favorite,
           ),
           const SizedBox(height: 12),
           _buildLegendItem(
+            context: context,
             color: const Color(0xFF212121),
-            label: 'Infidélité',
+            label: AppLocalizations.of(context)!.infidelite,
             icon: Icons.warning_amber,
           ),
         ],
@@ -257,6 +318,7 @@ Partagé depuis Love Quest 💕
   }
 
   Widget _buildLegendItem({
+    required BuildContext context,
     required Color color,
     required String label,
     required IconData icon,
@@ -266,10 +328,7 @@ Partagé depuis Love Quest 💕
         Container(
           width: 40,
           height: 40,
-          decoration: BoxDecoration(
-            color: color,
-            shape: BoxShape.circle,
-          ),
+          decoration: BoxDecoration(color: color, shape: BoxShape.circle),
           child: Icon(icon, color: Colors.white, size: 20),
         ),
         const SizedBox(width: 16),
@@ -288,34 +347,101 @@ Partagé depuis Love Quest 💕
   Widget _buildHeader(GameState state) {
     return Padding(
       padding: const EdgeInsets.all(20.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Flexible(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'LOVE QUEST',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  'Swipe pour la prochaine carte',
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.6),
-                    fontSize: 14,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Row(
+          // Title and subtitle
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const Text(
+                'LOVE QUEST',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 1.5,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                AppLocalizations.of(context)!.swipeInstruction,
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.7),
+                  fontSize: 14,
+                  height: 1.2,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          // Buttons row
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              // About button
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const AboutScreen(),
+                    ),
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(
+                      color: Colors.blue.withOpacity(0.5),
+                      width: 1,
+                    ),
+                  ),
+                  child: const Icon(
+                    Icons.info_outline,
+                    color: Colors.blue,
+                    size: 24,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              // Shop button
+              GestureDetector(
+                onTap: () {
+                  final gameCubit = context.read<GameCubit>();
+                  final purchaseCubit = context.read<PurchaseCubit>();
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MultiBlocProvider(
+                        providers: [
+                          BlocProvider.value(value: gameCubit),
+                          BlocProvider.value(value: purchaseCubit),
+                        ],
+                        child: const ShopScreen(),
+                      ),
+                    ),
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.amber.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(
+                      color: Colors.amber.withOpacity(0.5),
+                      width: 1,
+                    ),
+                  ),
+                  child: const Icon(
+                    Icons.shopping_bag,
+                    color: Colors.amber,
+                    size: 24,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              // Favorites button
               GestureDetector(
                 onTap: () {
                   final gameCubit = context.read<GameCubit>();
@@ -351,7 +477,10 @@ Partagé depuis Love Quest 💕
               ),
               const SizedBox(width: 12),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.white.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(20),
@@ -429,15 +558,11 @@ Partagé depuis Love Quest 💕
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Icon(
-            Icons.celebration,
-            size: 100,
-            color: Colors.amber,
-          ),
+          const Icon(Icons.celebration, size: 100, color: Colors.amber),
           const SizedBox(height: 24),
-          const Text(
-            'PARTIE TERMINÉE',
-            style: TextStyle(
+          Text(
+            AppLocalizations.of(context)!.gameFinished.toUpperCase(),
+            style: const TextStyle(
               fontSize: 36,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -445,7 +570,7 @@ Partagé depuis Love Quest 💕
           ),
           const SizedBox(height: 16),
           Text(
-            'Vous avez tiré ${state.drawnCards.length} cartes',
+            AppLocalizations.of(context)!.youDrewCards(state.drawnCards.length),
             style: TextStyle(
               fontSize: 18,
               color: Colors.white.withOpacity(0.7),
@@ -459,18 +584,15 @@ Partagé depuis Love Quest 💕
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.pinkAccent,
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(
-                horizontal: 48,
-                vertical: 16,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30),
               ),
               elevation: 8,
             ),
-            child: const Text(
-              'NOUVELLE PARTIE',
-              style: TextStyle(
+            child: Text(
+              AppLocalizations.of(context)!.newGame.toUpperCase(),
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1,
@@ -487,33 +609,29 @@ Partagé depuis Love Quest 💕
       context: context,
       builder: (dialogContext) => AlertDialog(
         backgroundColor: const Color(0xFF1A1A2E),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Text(
+          AppLocalizations.of(context)!.endGameTitle,
+          style: const TextStyle(color: Colors.white),
         ),
-        title: const Text(
-          'Terminer le jeu?',
-          style: TextStyle(color: Colors.white),
-        ),
-        content: const Text(
-          'Voulez-vous vraiment terminer le jeu?',
-          style: TextStyle(color: Colors.white70),
+        content: Text(
+          AppLocalizations.of(context)!.endGameMessage,
+          style: const TextStyle(color: Colors.white70),
         ),
         actions: [
           TextButton(
             onPressed: () {
               Navigator.of(dialogContext).pop();
             },
-            child: const Text('ANNULER'),
+            child: Text(AppLocalizations.of(context)!.cancel.toUpperCase()),
           ),
           TextButton(
             onPressed: () {
               Navigator.of(dialogContext).pop();
               context.read<GameCubit>().endGame();
             },
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.red,
-            ),
-            child: const Text('TERMINER'),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: Text(AppLocalizations.of(context)!.end.toUpperCase()),
           ),
         ],
       ),
